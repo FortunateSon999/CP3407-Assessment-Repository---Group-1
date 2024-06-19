@@ -1,0 +1,270 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root variables */
+:root {
+    --background: #1a1a2e;
+    --color: #ffffff;
+    --primary-color: #0f3460;
+}
+
+/* General styles */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: var(--background);
+    color: var(--color);
+    letter-spacing: 1px;
+    transition: background 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Search bar styles */
+.search-bar {
+    background: #fff;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-bar h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #575757;
+}
+
+.search-bar .container img {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Optional: Set a max-width to prevent it from getting too large */
+    margin: 0 auto;
+    display: block;
+}
+
+/* Featured cars styles */
+.featured-cars {
+    padding: 2rem 0;
+}
+
+.featured-cars .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.featured-cars h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.car-card {
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.car-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.car-card p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* About us styles */
+.about-us {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 2em;
+}
+
+.about-us p {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.about-us h3 {
+    margin-top: 40px;
+    color: #000;
+    font-size: 1.5em;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #1e90ff;
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.team-member p {
+    margin: 0;
+    color: #666;
+    font-size: 1em;
+}
+
+/* Footer styles */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+}
